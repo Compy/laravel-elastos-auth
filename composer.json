@@ -1,0 +1,29 @@
+{
+  "name": "compy/laravel-elastos-auth",
+  "description": "Elastos based 2FA for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jimmy Lipham",
+      "email": "hello@86pixels.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "simplito/elliptic-php": "^1.0",
+    "simplesoftwareio/simple-qrcode": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Compy\\LaravelElastosAuth\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Compy\\LaravelElastosAuth\\DIDAuthServiceProvider"
+      ]
+    }
+  }
+}
